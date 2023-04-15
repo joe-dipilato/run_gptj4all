@@ -1,0 +1,7 @@
+build
+*.bin
+gpt4all_voice
+.venv
+__pycache__
+*.pyc
+.pytest_cache

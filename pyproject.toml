@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "wrap-gptj4all"
+version = "0.1.0"
+description = ""
+authors = ["Joe DiPilato <joe.dipilato@mongodb.com>"]
+readme = "README.md"
+packages = [{include = "wrap_gptj4all"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pyllamacpp = "^1.0.6"
+structlog = "^23.1.0"
+junitparser = "^2.8.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
