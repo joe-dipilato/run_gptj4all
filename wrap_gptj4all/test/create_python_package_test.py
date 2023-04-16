@@ -15,3 +15,8 @@ def test_can_start():
     assert not gpt.is_alive
     gpt.start()
     assert gpt.is_alive
+
+def test_load_model():
+    gpt = WrapGPTJ4All()
+    success = gpt.load_model()
+    assert success == True
