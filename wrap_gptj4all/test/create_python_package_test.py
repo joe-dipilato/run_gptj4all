@@ -18,5 +18,5 @@ def test_can_start():
 
 def test_load_model():
     gpt = WrapGPTJ4All()
-    success = gpt.load_model()
-    assert success == True
+    model_path = gpt.load_model(model_path=Path("LICENSE"))
+    assert model_path == Path("LICENSE")

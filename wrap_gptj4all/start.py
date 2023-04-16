@@ -24,7 +24,7 @@ class WrapGPTJ4All:
         """
         self._is_alive = True
 
-    def load_model(self,  model_path: Path = Path("gptj-6B")) -> Path:
+    def load_model(self,  model_path: Path = Path("default")) -> Path:
         """
         Loads the model from the specified path.
         :param model_path: Path to the model.
