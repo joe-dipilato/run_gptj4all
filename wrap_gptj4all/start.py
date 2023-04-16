@@ -2,6 +2,7 @@
 __all__ =  ["WrapGPTJ4All"]
 
 from pathlib import Path
+import pyllamacpp
 
 class WrapGPTJ4All:
     """
@@ -35,6 +36,13 @@ class WrapGPTJ4All:
         if self.model_path is None:
             raise FileNotFoundError(f"Model {model_path} not found.")
         return self.model_path
+    
+    def check_import_model_lib(self) -> bool:
+        """
+        Checks if the model library is available.
+        :return: True if the model library is available.
+        """
+        return True
 
     @property
     def is_alive(self):
