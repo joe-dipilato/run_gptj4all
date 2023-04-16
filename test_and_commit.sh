@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 mv build/latest.xml build/current.xml > /dev/null 2>&1 || true
 mv build/current.xml build/latest.xml
-which python
-pytest --junit-xml=build/current.xml $@
+python3 -m pytest --junit-xml=build/current.xml $@
 result=$?
 message=$(python3 tools/parse_junit.py)
 echo $message

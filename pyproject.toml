@@ -11,6 +11,7 @@ python = "^3.11"
 pyllamacpp = "^1.0.6"
 structlog = "^23.1.0"
 junitparser = "^2.8.0"
+pytest = "^7.3.1"
 
 
 [build-system]
