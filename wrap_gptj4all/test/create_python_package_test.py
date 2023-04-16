@@ -25,3 +25,9 @@ def test_import_model_lib():
     gpt = WrapGPTJ4All()
     result = gpt.check_import_model_lib()
     assert result == True
+
+def test_interface_with_model():
+    gpt = WrapGPTJ4All()
+    gpt.start()
+    result = gpt.generate_text(prompt="Hello World")
+    assert result == "Hello World"

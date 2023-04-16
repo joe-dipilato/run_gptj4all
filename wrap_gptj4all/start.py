@@ -42,7 +42,7 @@ class WrapGPTJ4All:
         Checks if the model library is available.
         :return: True if the model library is available.
         """
-        return True
+        return isinstance(pyllamacpp, object)
 
     @property
     def is_alive(self):
