@@ -20,3 +20,8 @@ def test_load_model():
     gpt = WrapGPTJ4All()
     model_path = gpt.load_model(model_path=Path("LICENSE"))
     assert model_path == Path("LICENSE")
+
+def test_import_model_lib():
+    gpt = WrapGPTJ4All()
+    result = gpt.check_import_model_lib()
+    assert result == True
